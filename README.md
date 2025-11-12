@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 📘 DueIt — Lightweight Homework Tracker
 
-# Run and deploy your AI Studio app
+**DueIt** is a fast, simple, and modern web-based homework tracker built for students who want an easy way to manage assignments, exams, and deadlines — without the clutter. No downloads, no accounts, no hassle — just open it in your browser and get organized.
 
-This contains everything you need to run your app locally.
+🌐 **Live Site:** [dueit-492589149267.us-west1.run.app](https://dueit-492589149267.us-west1.run.app)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1FefnbAw1UqZJL3kPhzp-v2e-aPAvKI3D
+---
 
-## Run Locally
+## 🚀 Overview
 
-**Prerequisites:**  Node.js
+DueIt helps students keep track of their academic responsibilities in one clean, accessible dashboard. It’s designed to be **lightweight**, **intuitive**, and **mobile-friendly**, focusing on what matters most — knowing what’s due and when.  
 
+You can quickly add assignments, exams, and projects, and DueIt will automatically organize and display them in an easy-to-read format. Built-in notifications make sure you never miss a deadline again.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## ✨ Features
+
+- 🧾 **Assignment Tracking** — Add, edit, and delete tasks or exams effortlessly.  
+- 📅 **Due Date Sorting** — Automatically sorts by due date for quick prioritization.  
+- 🔔 **Smart Notifications** — Get reminders before upcoming deadlines.  
+- 🌗 **Clean Interface** — Minimal, distraction-free design.  
+- 💻 **Web-Based** — Runs entirely in your browser — no install or login required.  
+- 📱 **Responsive Design** — Works smoothly on desktop, tablet, and mobile devices.  
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Firebase / Google Cloud Run |
+| Hosting | Google Cloud Run |
+| Notifications | Web Push API |
