@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]  # deploy whenever you push to main
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -34,20 +34,20 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload production files
+      - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # change if your build output folder is different
+          path: ./dist  # Vite outputs here by default
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
